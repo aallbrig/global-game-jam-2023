@@ -1,0 +1,9 @@
+.debuggerLine {
+    max-height: 32px;
+    font-size: 16px;
+    flex-direction: row;
+}
+
+.controllerDebuggerContainer {
+    flex-grow: 1;
+}
