@@ -8,26 +8,52 @@ namespace Player
     {
         public float moveSpeed = 10f;
         public Camera perspectiveCamera;
-        private PlayerInput _playerInput;
         private CharacterController _characterController;
+        private float _interactInput;
+        private float _jumpInput;
+        private Vector2 _moveInput;
+        private Transform _perspectiveCameraTransform;
+        private PlayerInput _playerInput;
 
         private void Awake()
         {
             _playerInput = GetComponent<PlayerInput>();
             _characterController = GetComponent<CharacterController>();
             perspectiveCamera ??= Camera.main;
+            if (perspectiveCamera)
+                _perspectiveCameraTransform = perspectiveCamera.transform;
         }
+        private void Update()
+        {
+            if (_moveInput != Vector2.zero)
+            {
+                var forward = _perspectiveCameraTransform.forward;
+                var right = _perspectiveCameraTransform.right;
+                forward.y = 0f;
+                right.y = 0f;
+                forward.Normalize();
+                right.Normalize();
+                var desiredMoveDirection = forward * _moveInput.y + right * _moveInput.x;
+                _characterController.Move(desiredMoveDirection * moveSpeed * Time.deltaTime);
+            }
+        }
+
         private void OnMove(InputValue value)
         {
-            Debug.Log($"on move {value.Get<Vector2>()}");
+            _moveInput = value.Get<Vector2>();
+            Debug.Log($"on move {_moveInput}");
         }
+
         private void OnInteract(InputValue value)
         {
-            Debug.Log($"on interact {value.Get<float>()}");
+            _interactInput = value.Get<float>();
+            Debug.Log($"on interact {_interactInput}");
         }
+
         private void OnJump(InputValue value)
         {
-            Debug.Log($"on jump {value.Get<float>()}");
+            _jumpInput = value.Get<float>();
+            Debug.Log($"on jump {_jumpInput}");
         }
     }
 }
