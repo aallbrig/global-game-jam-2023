@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Pause%20Menu.uss?fileID=7433441132597879392&amp;guid=d58410d62d23c48578f5fc766a5cb040&amp;type=3#Pause Menu" />
+    <ui:VisualElement name="pauseMenuContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Label tabindex="-1" text="Pause Menu" display-tooltip-when-elided="true" class="h1" />
+        <ui:VisualElement name="controlsInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="[Info] Controls" display-tooltip-when-elided="true" class="sectionHeader" />
+        </ui:VisualElement>
+        <ui:VisualElement name="resourceInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="[Info] Resources" display-tooltip-when-elided="true" class="sectionHeader" />
+            <ui:VisualElement name="resourceInfoList" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Soil" display-tooltip-when-elided="true" class="sectionHeader" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Water" display-tooltip-when-elided="true" class="sectionHeader" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Sunlight" display-tooltip-when-elided="true" class="sectionHeader" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

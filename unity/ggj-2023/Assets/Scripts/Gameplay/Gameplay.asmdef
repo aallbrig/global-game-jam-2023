@@ -1,11 +1,9 @@
 {
-    "name": "Player",
+    "name": "Gameplay",
     "rootNamespace": "",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:e372b5a43db14b9a994330bc12acd889",
         "GUID:9536fc91c7c04435b8771532044a635d",
-        "GUID:0576fd63cb5c4420ca0d619bb27aab9d"
+        "GUID:e372b5a43db14b9a994330bc12acd889"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

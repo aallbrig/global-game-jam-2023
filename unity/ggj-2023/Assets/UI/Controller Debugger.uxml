@@ -1,29 +1,44 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Controller%20Debugger.uss?fileID=7433441132597879392&amp;guid=f313617c7c5fd4725906ef21da8f8d2c&amp;type=3#Controller Debugger" />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance"
+         engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Controller%20Debugger.uss?fileID=7433441132597879392&amp;guid=f313617c7c5fd4725906ef21da8f8d2c&amp;type=3#Controller Debugger"/>
     <ui:VisualElement name="controllerDebuggerContainer">
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Controller" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="Controller Name" display-tooltip-when-elided="true" name="controllerName" />
+            <ui:Label tabindex="-1" text="Controller" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="Controller Name" display-tooltip-when-elided="true" name="controllerName"/>
         </ui:VisualElement>
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Controller Input" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="Controller Input Value" display-tooltip-when-elided="true" name="controllerInput" />
+            <ui:Label tabindex="-1" text="Control scheme" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="control scheme value" display-tooltip-when-elided="true"
+                      name="controlScheme"/>
         </ui:VisualElement>
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Device Info" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="Device info value" display-tooltip-when-elided="true" name="deviceInfo" />
+            <ui:Label tabindex="-1" text="Device Info" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="Device info value" display-tooltip-when-elided="true" name="deviceInfo"/>
         </ui:VisualElement>
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Movement" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="movement value" display-tooltip-when-elided="true" name="movement" />
+            <ui:Label tabindex="-1" text="Movement" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="movement value" display-tooltip-when-elided="true" name="movement"/>
         </ui:VisualElement>
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Interact" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="Interact value" display-tooltip-when-elided="true" name="interact" />
+            <ui:Label tabindex="-1" text="Look" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="look value" display-tooltip-when-elided="true" name="look"/>
         </ui:VisualElement>
         <ui:VisualElement class="debuggerLine">
-            <ui:Label tabindex="-1" text="Jump" display-tooltip-when-elided="true" />
-            <ui:Label tabindex="-1" text="jump value" display-tooltip-when-elided="true" name="jump" />
+            <ui:Label tabindex="-1" text="Look Button" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="look button value" display-tooltip-when-elided="true" name="lookButton"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="debuggerLine">
+            <ui:Label tabindex="-1" text="Interact" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="Interact value" display-tooltip-when-elided="true" name="interact"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="debuggerLine">
+            <ui:Label tabindex="-1" text="Jump" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="jump value" display-tooltip-when-elided="true" name="jump"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="debuggerLine">
+            <ui:Label tabindex="-1" text="Pause" display-tooltip-when-elided="true"/>
+            <ui:Label tabindex="-1" text="pause value" display-tooltip-when-elided="true" name="pause"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

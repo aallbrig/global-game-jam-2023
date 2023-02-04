@@ -1,6 +1,6 @@
 .debuggerLine {
     max-height: 32px;
-    font-size: 16px;
+    font-size: 24px;
     flex-direction: row;
 }
 
