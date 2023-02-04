@@ -13,6 +13,8 @@ namespace Player
         private float _jumpInput;
         private Vector2 _moveInput;
         private Transform _perspectiveCameraTransform;
+        private Vector3 _perspectiveForward;
+        private Vector3 _perspectiveRight;
         private PlayerInput _playerInput;
 
         private void Awake()
@@ -27,15 +29,25 @@ namespace Player
         {
             if (_moveInput != Vector2.zero)
             {
-                var forward = _perspectiveCameraTransform.forward;
-                var right = _perspectiveCameraTransform.right;
-                forward.y = 0f;
-                right.y = 0f;
-                forward.Normalize();
-                right.Normalize();
-                var desiredMoveDirection = forward * _moveInput.y + right * _moveInput.x;
+                // Note: May have to move this when the player first starts joystick input
+                // because may have cinemachine
+                ReadPerspectiveCamera();
+                var desiredMoveDirection = _perspectiveForward * _moveInput.y + _perspectiveRight * _moveInput.x;
                 _characterController.Move(desiredMoveDirection * moveSpeed * Time.deltaTime);
             }
+        }
+        private void ReadPerspectiveCamera()
+        {
+            _perspectiveForward = _perspectiveCameraTransform.forward;
+            _perspectiveRight = _perspectiveCameraTransform.right;
+            NormalizeReadPerspectiveCameraValues();
+        }
+        private void NormalizeReadPerspectiveCameraValues()
+        {
+            _perspectiveForward.y = 0f;
+            _perspectiveRight.y = 0f;
+            _perspectiveForward.Normalize();
+            _perspectiveRight.Normalize();
         }
 
         private void OnMove(InputValue value)
