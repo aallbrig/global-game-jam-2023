@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2296156766171566028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: e9ecc6d4-c161-48ab-9f96-0f986d0de338
+  rect:
+    serializedVersion: 2
+    x: 49777
+    y: 50198
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 3294516083444531876}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Katie and Hero Dialogue
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -2296156766171566028}
+  - {fileID: 3294516083444531876}
+  - {fileID: 5647978700968571633}
+  root: {fileID: -2296156766171566028}
+  scrollPosition: {x: 49415.5, y: 49856}
+--- !u!114 &3294516083444531876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 46d8ceb8-c7c8-4cf5-9860-ea900bbde55f
+  rect:
+    serializedVersion: 2
+    x: 49916
+    y: 50154
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 5647978700968571633}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 41ed53a9679dc49bdb5f188b99838f1b, type: 2}
+  audio: {fileID: 8300000, guid: 00f34a85b4afc475583614bac9dfc953, type: 3}
+  dialogue: Hi you must be new. I'm Katie.
+--- !u!114 &5647978700968571633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 3659803c-c0db-491e-971e-493dda034897
+  rect:
+    serializedVersion: 2
+    x: 50151
+    y: 50153
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: d1c513eab907841f49d8fab2037ac2c9, type: 2}
+  audio: {fileID: 8300000, guid: 4dd31122939d842e78dff1809b09de79, type: 3}
+  dialogue: Nice to meet you!

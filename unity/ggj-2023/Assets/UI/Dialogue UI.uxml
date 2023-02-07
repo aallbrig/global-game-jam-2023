@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Common.uss?fileID=7433441132597879392&amp;guid=c68d5cd3e5c8443d09b8d2032bbfe09a&amp;type=3#Common" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; bottom: 24px; max-height: 300px; background-image: resource(&apos;personal/actionTreeBackgroundWithoutBorder&apos;); -unity-background-image-tint-color: rgb(138, 238, 145); position: absolute; right: 24px; left: 24px; height: 200px; min-height: 200px;">
+        <ui:Label tabindex="-1" text="Dialogue UI" display-tooltip-when-elided="true" name="speakerName" class="h1" />
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="speech" display-tooltip-when-elided="true" name="dialogueTextDisplay" class="sectionHeader" style="font-size: 24px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

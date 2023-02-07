@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1004228465080464387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c055ad34-28bf-4bec-9580-1f56f8ddbb03
+  rect:
+    serializedVersion: 2
+    x: 50456
+    y: 50155
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2487821601494811585}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f5d44b9b663224452bd56b68426a4104, type: 2}
+  audio: {fileID: 8300000, guid: cea376d61af89415f869d7a7e5d7f8d3, type: 3}
+  dialogue: test dialogue middle
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Test Dialogue
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: 6933133019069753730}
+  - {fileID: 6689318712949317443}
+  - {fileID: -1004228465080464387}
+  - {fileID: 2487821601494811585}
+  root: {fileID: 6933133019069753730}
+  scrollPosition: {x: 49939.5, y: 49924}
+--- !u!114 &2487821601494811585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: bf40f347-b340-4901-8979-b85b9d28ec9f
+  rect:
+    serializedVersion: 2
+    x: 50698
+    y: 50155
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f5d44b9b663224452bd56b68426a4104, type: 2}
+  audio: {fileID: 8300000, guid: 4dd31122939d842e78dff1809b09de79, type: 3}
+  dialogue: test dialogue end
+--- !u!114 &6689318712949317443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 720136cb-c6ee-4776-8ee0-0eaadc5abad7
+  rect:
+    serializedVersion: 2
+    x: 50204
+    y: 50156
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -1004228465080464387}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: f5d44b9b663224452bd56b68426a4104, type: 2}
+  audio: {fileID: 8300000, guid: 00f34a85b4afc475583614bac9dfc953, type: 3}
+  dialogue: Test dialogue start
+--- !u!114 &6933133019069753730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 892a6dea-b86e-4b6f-bc1e-3b924f6bccd8
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 6689318712949317443}
+  conditions: []
+  enterActions: []
+  exitActions: []

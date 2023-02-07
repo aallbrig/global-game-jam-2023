@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-namespace UserInterface
+namespace Debugging
 {
     [RequireComponent(typeof(PlayerInput), typeof(UIDocument))]
     public class ControllerDebugger : MonoBehaviour

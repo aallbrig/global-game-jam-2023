@@ -10,6 +10,8 @@
   ],
   "dependencies": {
     "com.fluid.behavior-tree": "2.2.3",
+    "com.fluid.database": "2.1.0",
+    "com.fluid.unity-event-plus": "1.2.0",
     "com.fluid.dialogue": "2.6.0",
     "com.fluid.state-machine": "2.0.1",
     "com.unity.ai.navigation": "1.1.1",

@@ -1,27 +1,29 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Pause%20Menu.uss?fileID=7433441132597879392&amp;guid=d58410d62d23c48578f5fc766a5cb040&amp;type=3#Pause Menu" />
-    <ui:VisualElement name="pauseMenuContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+    <Style src="project://database/Assets/UI/Common.uss?fileID=7433441132597879392&amp;guid=c68d5cd3e5c8443d09b8d2032bbfe09a&amp;type=3#Common" />
+    <ui:VisualElement name="pauseMenuContainer" class="menuContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:Label tabindex="-1" text="Pause Menu" display-tooltip-when-elided="true" class="h1" />
         <ui:VisualElement name="controlsInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
             <ui:Label tabindex="-1" text="[Info] Controls" display-tooltip-when-elided="true" class="sectionHeader" />
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png?fileID=2800000&amp;guid=c223e0c507e2c6549a2cb97441b62cbe&amp;type=3#added-file-dark@2x&apos;);" />
         </ui:VisualElement>
         <ui:VisualElement name="resourceInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
             <ui:Label tabindex="-1" text="[Info] Resources" display-tooltip-when-elided="true" class="sectionHeader" />
             <ui:VisualElement name="resourceInfoList" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
                 <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
                     <ui:Label tabindex="-1" text="Soil" display-tooltip-when-elided="true" class="sectionHeader" />
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png?fileID=2800000&amp;guid=c223e0c507e2c6549a2cb97441b62cbe&amp;type=3#added-file-dark@2x&apos;);" />
+                    <ui:Label tabindex="-1" text="Resource description" display-tooltip-when-elided="true" style="white-space: normal;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
                     <ui:Label tabindex="-1" text="Water" display-tooltip-when-elided="true" class="sectionHeader" />
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png?fileID=2800000&amp;guid=c223e0c507e2c6549a2cb97441b62cbe&amp;type=3#added-file-dark@2x&apos;);" />
+                    <ui:Label tabindex="-1" text="Resource description" display-tooltip-when-elided="true" style="white-space: normal;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
                     <ui:Label tabindex="-1" text="Sunlight" display-tooltip-when-elided="true" class="sectionHeader" />
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/added-file-dark@2x.png?fileID=2800000&amp;guid=c223e0c507e2c6549a2cb97441b62cbe&amp;type=3#added-file-dark@2x&apos;);" />
+                    <ui:Label tabindex="-1" text="Resource description" display-tooltip-when-elided="true" style="white-space: normal;" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

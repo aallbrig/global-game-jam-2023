@@ -16,19 +16,21 @@ namespace Gameplay
 
     public class Tree : MonoBehaviour, IStateMachineFactory, IInteractable
     {
+        public Transform targetTransform;
         public TreeState startTreeState;
+        [SerializeField] private TreeState currentTreeState;
         public UnityEvent onSprout;
         public UnityEvent onSapling;
         public UnityEvent onMature;
-
-        [SerializeField] private TreeState currentTreeState;
+        public UnityEvent<TreeState, TreeState> onStateChange;
 
         private bool _timeToGrow;
         private Transform _transform;
         private IFsm _treeStateMachine;
         private void Awake()
         {
-            _transform = transform;
+            _transform = targetTransform;
+            _transform ??= transform;
             _treeStateMachine = Build();
         }
         private void Update()
@@ -37,6 +39,8 @@ namespace Gameplay
             var previousTreeState = currentTreeState;
             currentTreeState = (TreeState)_treeStateMachine.CurrentState.Id;
             if (previousTreeState != currentTreeState)
+            {
+                onStateChange?.Invoke(previousTreeState, currentTreeState);
                 switch (currentTreeState)
                 {
                     case TreeState.Sprout:
@@ -49,8 +53,9 @@ namespace Gameplay
                         onMature?.Invoke();
                         break;
                 }
+            }
         }
-        public void Interact() => GrowYourRoots();
+        public void Interact(GameObject interactor) => GrowYourRoots();
         public IFsm Build() => new FsmBuilder()
             .Owner(gameObject)
             .Default(startTreeState)

@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5548519629912410253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 64caff6f-1568-4558-82fb-9bd06693d408
+  rect:
+    serializedVersion: 2
+    x: 50459
+    y: 50159
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 65b781cfb033b42ff816b22b7f97483d, type: 2}
+  audio: {fileID: 8300000, guid: 00f34a85b4afc475583614bac9dfc953, type: 3}
+  dialogue: Hi! My name is Chris. I've lived here since I was a boy.
+--- !u!114 &-3537530290577143618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 8a2a2d75-7909-4649-aa9b-fed04ce729ef
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 7444655372169434994}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Chris and Hero Dialogue
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -3537530290577143618}
+  - {fileID: 7444655372169434994}
+  - {fileID: -5548519629912410253}
+  root: {fileID: -3537530290577143618}
+  scrollPosition: {x: 49474.5, y: 49869}
+--- !u!114 &7444655372169434994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4f588d48-b72d-4088-aac6-26f597b03e27
+  rect:
+    serializedVersion: 2
+    x: 50212
+    y: 50156
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5548519629912410253}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: d1c513eab907841f49d8fab2037ac2c9, type: 2}
+  audio: {fileID: 8300000, guid: cea376d61af89415f869d7a7e5d7f8d3, type: 3}
+  dialogue: Hello I'm new here!

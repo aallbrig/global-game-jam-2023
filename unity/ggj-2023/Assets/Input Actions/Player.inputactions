@@ -24,6 +24,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "LookReset",
+                    "type": "Button",
+                    "id": "ed64f88a-d728-463f-be7d-29aa1d9d4377",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "e8b52c9b-4c72-44cf-84e7-1f2b0a56c96a",
@@ -49,15 +58,6 @@
                     "processors": "",
                     "interactions": "Press(behavior=2)",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "LookReset",
-                    "type": "Button",
-                    "id": "ed64f88a-d728-463f-be7d-29aa1d9d4377",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press(behavior=2)",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -107,23 +107,23 @@
                 },
                 {
                     "name": "",
-                    "id": "3e85640f-6aeb-40a8-aaec-810608d4a56e",
-                    "path": "<Gamepad>/leftStickPress",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LookReset",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "b758fc01-c76a-48bc-8ff2-135c24892c19",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e85640f-6aeb-40a8-aaec-810608d4a56e",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LookReset",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

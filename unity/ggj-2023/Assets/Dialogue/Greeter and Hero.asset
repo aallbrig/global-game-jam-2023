@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8136668532586960534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 8801a806-8a09-44f8-a466-9cf0ccfed1ed
+  rect:
+    serializedVersion: 2
+    x: 50207
+    y: 50152
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -3959093602702301934}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 98a00388ea72b4dc5a0b65f8a846b173, type: 2}
+  audio: {fileID: 8300000, guid: 00f34a85b4afc475583614bac9dfc953, type: 3}
+  dialogue: Hi! I'm the town greeter. Welcome!
+--- !u!114 &-7213256641785792487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 89883c2b-8678-4152-85dc-090c72295c13
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -8136668532586960534}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-3959093602702301934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 1d27e57a-f180-41d1-9994-cf36ac585b93
+  rect:
+    serializedVersion: 2
+    x: 50534
+    y: 50189
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: d1c513eab907841f49d8fab2037ac2c9, type: 2}
+  audio: {fileID: 8300000, guid: 4dd31122939d842e78dff1809b09de79, type: 3}
+  dialogue: Thanks!
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Greeter and Hero
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -7213256641785792487}
+  - {fileID: -8136668532586960534}
+  - {fileID: -3959093602702301934}
+  root: {fileID: -7213256641785792487}
+  scrollPosition: {x: 49415.5, y: 49856}

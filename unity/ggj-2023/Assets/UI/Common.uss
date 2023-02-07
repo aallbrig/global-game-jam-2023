@@ -1,0 +1,15 @@
+.sectionHeader {
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+.h1 {
+    font-size: 36px;
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+.menuContainer {
+    background-image: resource('personal/actionTreeBackgroundWithoutBorder');
+    -unity-background-image-tint-color: rgba(121, 192, 155, 0.9);
+}

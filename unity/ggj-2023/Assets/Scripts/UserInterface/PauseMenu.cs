@@ -27,7 +27,11 @@ namespace UserInterface
             _uiDocument = GetComponent<UIDocument>();
             _pauseMenuStateMachine = Build();
         }
-        private void Update() => _pauseMenuStateMachine.Tick();
+        private void Update()
+        {
+            _pauseMenuStateMachine.Tick();
+            currentMenuState = (PauseMenuState)_pauseMenuStateMachine.CurrentState.Id;
+        }
         public IFsm Build() => new FsmBuilder()
             .Owner(gameObject)
             .Default(startMenuState)
